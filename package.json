@@ -2,14 +2,18 @@
   "name": "2fa-qr-service",
   "version": "1.0.0",
   "description": "2FA QR Code Generation Service",
-  "main": "dist/qrService.min.js",
+  "main": "src/qrService.js",
+  "files": [
+    "src/qrService.js"
+  ],
   "scripts": {
     "build": "terser src/qrService.js -o dist/qrService.min.js"
   },
-  "dependencies": {
-    "qrcode": "^1.5.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p3073845/2fa-qr-service.git"
   },
-  "devDependencies": {
-    "terser": "^5.19.2"
-  }
+  "keywords": ["2fa", "qrcode", "authentication"],
+  "author": "",
+  "license": "MIT"
 }
